@@ -29,7 +29,7 @@ class UserRegistrationView(FormView):
 class UserLoginView(LoginView):
     template_name = 'account/user_login.html'
     def get_success_url(self):
-        return reverse_lazy('home')
+        return reverse_lazy('transactions_app:transaction_report')
     
                 # Logout view 
             # ==========================
